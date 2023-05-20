@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require('express')
 const { default: mongoose } = require('mongoose') //import mongoose
 const BoneSchema = require('./Number')
@@ -5,7 +6,7 @@ const cors = require("cors")
 const app = express()
 const port = 5500
 
-mongoose.connect("mongodb+srv://ghulamyaseen:374773473747@cluster1.fraszvd.mongodb.net/test-database")
+mongoose.connect(process.env.MONGO_DB_URI)
   .then((res) => console.log("Server connected"))
   .catch((err) => console.log("Server disconnected"))
 
