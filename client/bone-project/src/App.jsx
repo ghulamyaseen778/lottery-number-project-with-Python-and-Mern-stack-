@@ -35,6 +35,7 @@ const App = () => {
         bool: false
       }, ...data])
     }
+    setTakeInput("")
     console.log(takeInput)
   }
   setInterval(() => {
