@@ -4,7 +4,7 @@ import pymongo
 import datetime
 
 if __name__ == "__main__":
-    client = pymongo.MongoClient("mongodb+srv://ghulamyaseen:374773473747@cluster1.fraszvd.mongodb.net/daruliftadata")
+    client = pymongo.MongoClient("")
     db = client["test-database"]
     # posts = db.posts
     # post_id=posts.insert_one({"p":1}).inserted_id
